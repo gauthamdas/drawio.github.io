@@ -1797,7 +1797,7 @@ Menus.prototype.createMenubar = function(container)
 	var menubar = new Menubar(this.editorUi, container);
 	var menus = this.defaultMenuItems;
 	
-	for (var i = 0; i < menus.length; i++)
+	for (var i = 0; i < menus.length-1; i++)
 	{
 		(mxUtils.bind(this, function(menu)
 		{
@@ -1808,7 +1808,7 @@ Menus.prototype.createMenubar = function(container)
 			}));
 			
 			this.menuCreated(menu, elt);
-		}))(this.get(menus[i]));
+		}))(this.get(menus[i+1]));
 	}
 
 	return menubar;
@@ -2018,5 +2018,7 @@ Menu.prototype.execute = function(menu, parent)
  */
 EditorUi.prototype.createMenus = function()
 {
+	console.log("C#########M"):
+	
 	return new Menus(this);
 };
