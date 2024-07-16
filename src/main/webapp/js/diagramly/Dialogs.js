@@ -5038,22 +5038,22 @@ var SaveDialog = function(editorUi, title, saveFn, disabledModes, data, mimeType
 	left = left.cloneNode(false);
 	right = right.cloneNode(false);
 
-	mxUtils.write(left, mxResources.get('where') + ':');
+	// mxUtils.write(left, mxResources.get('where') + ':');
 
-	var storageSelect = document.createElement('select');
-	storageSelect.style.textOverflow = 'ellipsis';
-	storageSelect.style.gridColumn = '1';
+	// var storageSelect = document.createElement('select');
+	// storageSelect.style.textOverflow = 'ellipsis';
+	// storageSelect.style.gridColumn = '1';
 
-	var resetOption = document.createElement('option');
-	mxUtils.write(resetOption, mxResources.get('reset'));
-	resetOption.setAttribute('value', 'reset');
+	// var resetOption = document.createElement('option');
+	// mxUtils.write(resetOption, mxResources.get('reset'));
+	// resetOption.setAttribute('value', 'reset');
 
-	var localServices = ['browser', 'device', 'download', '_blank'];
-	var dash = '&nbsp;&nbsp;&#8211&nbsp;&nbsp;';
+	// var localServices = ['browser', 'device', 'download', '_blank'];
+	// var dash = '&nbsp;&nbsp;&#8211&nbsp;&nbsp;';
 
-	var dashNode = document.createElement('option');
-	dashNode.setAttribute('disabled', 'disabled');
-	dashNode.innerHTML = '-----------------';
+	// var dashNode = document.createElement('option');
+	// dashNode.setAttribute('disabled', 'disabled');
+	// dashNode.innerHTML = '-----------------';
 
 	function addStorageEntry(mode, path, id, selected, title, entryType)
 	{
