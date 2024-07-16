@@ -4912,6 +4912,7 @@ NewDialog.tagsList = {};
  */
 var SaveDialog = function(editorUi, title, saveFn, disabledModes, data, mimeType, base64Encoded, defaultMode)
 {
+	console.log('SaveDialogGautham', editorUi, title, saveFn, disabledModes, data, mimeType, base64Encoded, defaultMode);
 	var div = document.createElement('div');
 	div.style.display = 'flex';
 	div.style.flexWrap = 'wrap';
